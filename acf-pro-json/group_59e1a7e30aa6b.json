@@ -1,0 +1,150 @@
+{
+    "key": "group_59e1a7e30aa6b",
+    "title": "Menu Items",
+    "fields": [
+        {
+            "key": "field_59e1a928b4838",
+            "label": "Mega Menu",
+            "name": "mega_menu",
+            "type": "select",
+            "instructions": "Enable or disable mega dropdown for this item.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "xe-mega-menu",
+                "id": ""
+            },
+            "choices": {
+                "1": "Enable",
+                "0": "Disable"
+            },
+            "default_value": [
+                0
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a5f733f06e94",
+            "label": "Select Mega Menu",
+            "name": "mega_dropdown",
+            "type": "post_object",
+            "instructions": "Choose mega menu to be displayed in dropdown of this item.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59e1a928b4838",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "xe-mega-menu",
+                "id": ""
+            },
+            "post_type": [
+                "xe-mega-menus"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5a8a382237a66",
+            "label": "Full Width Mega Menu",
+            "name": "mega_width",
+            "type": "select",
+            "instructions": "Enable or disable full width mega menu.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59e1a928b4838",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "xe-mega-menu",
+                "id": ""
+            },
+            "choices": {
+                "fw": "Enable",
+                "sw": "Disable"
+            },
+            "default_value": [
+                "fw"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a631234c1046",
+            "label": "Mega Menu Width",
+            "name": "mega_width_value",
+            "type": "number",
+            "instructions": "Choose width of mega menu in pixels. Do not add \"px\".",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59e1a928b4838",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a8a382237a66",
+                        "operator": "==",
+                        "value": "sw"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "xe-mega-menu",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 199,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1519150345
+}

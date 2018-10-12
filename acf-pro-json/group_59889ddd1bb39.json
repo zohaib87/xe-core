@@ -1,0 +1,282 @@
+{
+    "key": "group_59889ddd1bb39",
+    "title": "Content Tab",
+    "fields": [
+        {
+            "key": "field_59ab867e83a98",
+            "label": "Background Color",
+            "name": "bg_color",
+            "type": "extended-color-picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "color_palette": "",
+            "hide_palette": 0
+        },
+        {
+            "key": "field_59889ddd65c84",
+            "label": "Slider",
+            "name": "slider",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "revslider": "Revolution Slider",
+                "layerslider": "Layer Slider"
+            },
+            "default_value": [
+                "none"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59889ddd66498",
+            "label": "Revolution Slider",
+            "name": "revslider",
+            "type": "wpp_acf_revolution_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59889ddd65c84",
+                        "operator": "==",
+                        "value": "revslider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "fields[revslider": {
+                "disable": "",
+                "allow_null": "0",
+                "multiple": "0",
+                "hide_disabled": "0"
+            }
+        },
+        {
+            "key": "field_59889ddd66646",
+            "label": "Layer Slider",
+            "name": "layerslider",
+            "type": "sidebar_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59889ddd65c84",
+                        "operator": "==",
+                        "value": "layerslider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 1,
+            "default_value": ""
+        },
+        {
+            "key": "field_59889ddd670bb",
+            "label": "Spacing Top",
+            "name": "padding_top",
+            "type": "number",
+            "instructions": "Spacing after title-bar and before the main content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_59889ddd672c0",
+            "label": "Spacing Bottom",
+            "name": "padding_bottom",
+            "type": "number",
+            "instructions": "Spacing before footer or footer section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_59889ddd673ed",
+            "label": "Sidebar Position",
+            "name": "sidebar_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "none": "No Sidebar",
+                "left": "Left Sidebar",
+                "right": "Right Sidebar",
+                "both": "Left & Right Sidebars"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59889ddd677e9",
+            "label": "Select Left Sidebar",
+            "name": "left_sidebar_selector",
+            "type": "sidebar_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59889ddd72dd7",
+            "label": "Select Right Sidebar",
+            "name": "right_sidebar_selector",
+            "type": "sidebar_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_59889ddd770f8",
+            "label": "Left Sidebar Width",
+            "name": "left_sidebar_width",
+            "type": "number",
+            "instructions": "This option is in percent.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 10,
+            "max": 50,
+            "step": ""
+        },
+        {
+            "key": "field_59889ddd777ef",
+            "label": "Right Sidebar Width",
+            "name": "right_sidebar_width",
+            "type": "number",
+            "instructions": "This option is in percent.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 10,
+            "max": 50,
+            "step": ""
+        },
+        {
+            "key": "field_59889ddd7fff6",
+            "label": "Note",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Default and empty fields will refer to theme options.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Options in this group are cloned into posts, pages and custom post types.",
+    "modified": 1504413357
+}

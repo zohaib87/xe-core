@@ -1,0 +1,103 @@
+{
+    "key": "group_58c3c73e03544",
+    "title": "Tab Options",
+    "fields": [
+        {
+            "key": "field_58dd34fed70b2",
+            "label": "Icon Library",
+            "name": "tab_icon",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fontawesome": "Fontawesome",
+                "ionicons": "Ionicons"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58c3c73e351ed",
+            "label": "Fontawesome",
+            "name": "tab_fontawesome",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58dd34fed70b2",
+                        "operator": "==",
+                        "value": "fontawesome"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58dd34c5d70b1",
+            "label": "Ionicons",
+            "name": "tab_ionicons",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/ionicons.com\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58dd34fed70b2",
+                        "operator": "==",
+                        "value": "ionicons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "xe-tabs"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1501506580
+}

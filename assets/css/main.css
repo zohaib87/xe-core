@@ -1,0 +1,25 @@
+/*=======================================================
+      ADMIN BAR
+========================================================*/
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed;
+    }
+}
+
+/*=======================================================
+      Parallax Background
+========================================================*/
+.parallax-bg {
+	background-size: cover !important;
+	/*background-attachment: fixed;*/
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative; 
+}
+.overlay {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}

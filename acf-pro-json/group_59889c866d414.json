@@ -1,0 +1,318 @@
+{
+    "key": "group_59889c866d414",
+    "title": "Tool-Bar Tab",
+    "fields": [
+        {
+            "key": "field_59889c86a3bf1",
+            "label": "Tool-Bar",
+            "name": "tool_bar",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "1": "Enable",
+                "0": "Disable"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5998283499c95",
+            "label": "Background Color",
+            "name": "tool_bar_bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_59995bf3ff8eb",
+            "label": "Menu Location",
+            "name": "tool_bar_menu",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "primary-menu": "Primary Location",
+                "second-menu": "Second Location",
+                "third-menu": "Third Location",
+                "fourth-menu": "Fourth Location",
+                "fifth-menu": "Fifth Location",
+                "sixth-menu": "Sixth Location"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_599960ef2dc9e",
+            "label": "Social Icons",
+            "name": "tool_bar_social_icons",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "1": "Enable",
+                "0": "Disable"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5999633e90001",
+            "label": "Icon Library",
+            "name": "tool_bar_font_icons",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "fontawesome": "Fontawesome",
+                "ionicons": "Ionicons"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5999642a90002",
+            "label": "Phone Number Icon",
+            "name": "tool_bar_phone_fontawesome",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5999633e90001",
+                        "operator": "==",
+                        "value": "fontawesome"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "fa-phone",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5999648690003",
+            "label": "Phone Number Icon",
+            "name": "tool_bar_phone_ionicons",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/ionicons.com\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5999633e90001",
+                        "operator": "==",
+                        "value": "ionicons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "ion-android-call",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5999671804858",
+            "label": "Phone Number",
+            "name": "tool_bar_phone_number",
+            "type": "text",
+            "instructions": "Enter your company phone number.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_599966c904856",
+            "label": "Email Icon",
+            "name": "tool_bar_email_fontawesome",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5999633e90001",
+                        "operator": "==",
+                        "value": "fontawesome"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "fa-envelope-o",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_599966ec04857",
+            "label": "Email Icon",
+            "name": "tool_bar_email_ionicons",
+            "type": "text",
+            "instructions": "<a href=\"http:\/\/ionicons.com\/\" target=\"_blank\">Click Here<\/a>  to choose icon and get its class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5999633e90001",
+                        "operator": "==",
+                        "value": "ionicons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "ion-android-mail",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5999674604859",
+            "label": "Email",
+            "name": "tool_bar_email",
+            "type": "text",
+            "instructions": "Enter your company email.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59889c86aa1a3",
+            "label": "Note",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Default and empty fields will refer to theme options.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Options in this group are cloned into posts, pages and custom post types.",
+    "modified": 1503228265
+}
