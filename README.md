@@ -2,7 +2,7 @@
 
 This plugin was required for [XeFramework](https://github.com/XeCreators/xe-framework). It added custom post types, taxonomies, fields and WPBakery Page Builder elements as they are `Plugin Territory` functionalities.
 
-*Note: Its been deprecated after release of version 2.0.0 of XeFramework*
+*Note: Its been deprecated after release of XeFramework v2.0.0*
 
 ## Getting Started With Core Plugin
 
